@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fly Me to the Moon Store</title>
+    <!-- 1. GLOBAL STYLES -->
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<!-- 2. NAV TOGGLE & PROFILE ICON -->
+<button id="menuBtn" class="menu-icon" aria-label="Open menu">☰</button>
+<img
+        id="profileBtn"
+        class="profile-icon"
+        src="/assets/images/profile.png"
+        alt="Profile"
+/>
+
+<!-- 3. OVERLAY -->
+<div id="overlay" class="overlay hidden"></div>
+
+<!-- 4. LEFT SIDEBAR (NAVIGATION) -->
+<aside id="navSidebar" class="sidebar" aria-label="Site navigation">
+    <button id="closeNavBtn" class="close-button" aria-label="Close menu">✕</button>
+    <div class="sidebar-search">
+        <input
+                id="searchInput"
+                type="search"
+                placeholder="Search…"
+                aria-label="Search menu"
+        />
+    </div>
+    <nav>
+        <ul id="navList" class="nav flex-column"></ul>
+    </nav>
+</aside>
+
+<!-- 5. RIGHT SIDEBAR (CART & PROFILE) -->
+<aside id="cartSidebar" class="cart-sidebar" aria-label="Cart & Profile">
+    <button id="closeCartBtn" class="close-button" aria-label="Close cart">✕</button>
+    <h3>Your cart</h3>
+    <ul id="cartList" class="cart-list"></ul>
+    <p id="emptyCartMsg" class="empty-cart">Cart is empty.</p>
+    <button id="checkoutBtn" class="checkout-btn hidden">Checkout</button>
+    <button id="logoutBtn" class="logout-btn">Log out</button>
+</aside>
+
+<!-- 6. HERO SPLIT PANEL -->
+<section class="hero-wrapper">
+    <div class="container">
+        <h1 class="fly-me">Fly me</h1>
+        <h1 class="to-the-moon">to the moon</h1>
+        <h2 class="gaming-store">Gaming Store</h2>
+        <p class="kanji">ゲームストア</p>
+    </div>
+    <div class="about-right">
+        <h2>Welcome to Fly Me to the Moon</h2>
+        <p>Discover the best games, consoles, and merch inspired by Evangelion.</p>
+        <p class="highlight">Shop now and elevate your gaming experience!</p>
+    </div>
+</section>
+
+<!-- 7. SCRIPT -->
+<script src="/js/main.js"></script>
+</body>
+</html>
